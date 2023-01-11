@@ -30,17 +30,3 @@ Route::get('/', function () {
 Route::get('/contact', [MailController::class, 'showForm']);
 
 Route::post('/contact', [MailController::class, 'sendMail']);
-
-//Route::post('/contact', function (Request $request) {
-//    $name = $request->input('name');
-//    $email = $request->input('email');
-//    $content = $request->input('message');
-//
-//    $user = ['name' => $name, 'email' => $email, "content" => $content];
-//
-//    Mail::send('mail.template', ['name' => $name, 'email' => $email, "content" => $content], function ($message) use ($name, $email) {
-//        $message->from($email, $name);
-//        $message->to('lefetey.nathan@gmail.com', 'Nathan LEFETEY');
-//        $message->subject('Demande de contact');
-//    });
-//});

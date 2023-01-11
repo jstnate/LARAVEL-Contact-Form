@@ -31,8 +31,7 @@ class MailShipping extends Mailable
      */
     public function build(): MailShipping
     {
-        return $this->from($this->mailData['email'], 'Nathan LEFETEY')
-                    ->replyTo('lefetey.nathan@hotmail.com', 'Nathan LEFETEY')
+        return $this->from('contact@gmail.com', 'Contact Laravel')
                     ->subject('Demande de contact')
                     ->view('mail.template');
     }
