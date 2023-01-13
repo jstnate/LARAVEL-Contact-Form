@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+    box-shadow: 0 8px 16px -5px rgb(0 0 0 / .2);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+
+.input-container {
+    height: 80%;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 0;
+}
+
+input, textarea {
+    padding: 1em;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid rgb(0 0 0 / .1);
+    outline: none;
+    background: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, input:valid, textarea:focus, textarea:valid {
+    border: 1px solid black;
+}
+
+textarea:focus, textarea:valid {
+    height: 225px;
+}
+
+input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid ~ label {
+    background: #fff;
+    top: -10px;
+    color: #000;
+    z-index: 0;
+    font-size: 14px;
+}
+
+label {
+    padding: 0 10px;
+    position: absolute;
+    z-index: -1;
+    top: 30%;
+    left: .5em;
+    color: rgb(0 0 0 / .3);
+    transition: all .2s;
+}
+
+button {
+    padding: 1em 25%;
+    border: none;
+    font-size: 16px;
+    background: #fff;
+    box-shadow: 0 10px 20px -5px rgb(0 0 0 / .2);
+    font-weight: bold;
+    transition: all .2s;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+
+.success-div {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px -5px rgb(0 0 0 / .2);
+}
