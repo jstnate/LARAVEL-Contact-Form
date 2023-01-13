@@ -8,7 +8,7 @@
 
 **Etape 1 :** Cloner le repository à l’aide de cette commande ou télécharger le zip
 
-```css
+```c
 git clone git@github.com:jstnate/contact-form_laravel.git
 ```
 
