@@ -1,6 +1,7 @@
 # Formulaire de contact en laravel
 
 *Ce formulaire de contact à été fait dans un but pédagogique et n’a pas pour but d’être utiliser dans de réel projet*
+*A noté que cette application tourne sous PHP 8.0 et Laravel 9.47
 
 <br/>
 
