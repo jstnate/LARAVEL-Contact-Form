@@ -1,36 +1,36 @@
-# Formulaire de contact en laravel
+# Contact form in laravel
 
-*Ce formulaire de contact à été fait dans un but pédagogique et n’a pas pour but d’être utiliser dans de réel projet*
+*This contact form was made for educational purposes and is not intended to be used in real client projects*
 
-*A noté que cette application tourne sous PHP 8.0 et Laravel 9.47*
+*Note that this application runs on PHP 8.0 and Laravel 9.47*
 
 <br/>
 
-## Initialisation du projet
+## Initialization of the project
 
-**Etape 1 :** Cloner le repository à l’aide de cette commande ou télécharger le zip
+**Step 1 :** Clone the repository with this command or download the zip
 
 ```c
 git clone git@github.com:jstnate/contact-form_laravel.git
 ```
 
-**Etape 2 :** Importer les dépendences laravel
+**Step 2 :** Import the laravel dependencies
 ```C
 composer install
 ```
 
-**Etape 3 :** Configurer le mailer Gmail de la façon suivante
+**Step 3 :** Configure the Gmail mailer as follows
 
-[Lien de la vidéo](https://youtu.be/kSir8z0QS2M](https://youtu.be/kSir8z0QS2M )
+[Link of the video](https://youtu.be/kSir8z0QS2M )
 
-**Etape 4 :** Rendez-vous dans le fichier app/Http/Controllers/MailController, puis dans la fonction `sendEmail()`, remplacer le texte `YOUR_EMAIL_ADDRESS` par votre adresse mail
-
-<br/>
-
-## Utilisation du formulaire
-
-Pour pouvoir utiliser le formulaire de contact, ajouter `/contact`à l’url afin m’accéder au formulaire.
+**Step 4 :** Go to the app/Http/Controllers/MailController file, then in the `sendEmail()` function, replace the text `YOUR_EMAIL_ADDRESS` with your email address
 
 <br/>
 
-### Remplissez le formulaire afin de recevoir votre email :)
+## Using the form
+
+To be able to use the contact form, add `/contact` to the url to access the form.
+
+<br/>
+
+### Fill in the form to receive your email :)
