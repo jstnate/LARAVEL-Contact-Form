@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\MailShipping;
+use App\Mail\MailContact;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,14 +19,14 @@ use App\Mail\MailShipping;
 
 //Route::get('/', function () {
 //    Mail::to('lefetey.nathan@gmail.com')
-//        ->send(new MailShipping());
+//        ->send(new MailContact());
 ////    return view('welcome');
 //});
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('contact');
 });
 
-Route::get('/contact', [MailController::class, 'showForm']);
+Route::get('/contact', [MailController::class, 'showForm'])->name("contact");
 
 Route::post('/contact', [MailController::class, 'sendMail']);

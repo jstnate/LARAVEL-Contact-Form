@@ -13,7 +13,7 @@
             <h1>Demande de contact</h1>
             <p>Veuillez renseigner les champs requis</p>
         </header>
-        <form class="form-div" action="/contact" method="POST">
+        <form class="form-div" action="{{ route('contact') }}" method="POST">
             @csrf
             <div class="input-container">
                 <div>

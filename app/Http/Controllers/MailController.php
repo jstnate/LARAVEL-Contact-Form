@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\MailShipping;
+use App\Mail\MailContact;
 
 class MailController extends Controller
 {
@@ -22,8 +22,8 @@ class MailController extends Controller
 
         $user = ['name' => $name, 'email' => $email, "content" => $content];
 
-        Mail::to('YOUR_EMAIL_ADDRESS')
-            ->send(new MailShipping($user));
+        Mail::to(env('MAIL_FROM_ADDRESS'))
+            ->send(new MailContact($user));
 
         return view('result');
     }

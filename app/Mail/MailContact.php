@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class MailShipping extends Mailable
+class MailContact extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -27,9 +27,9 @@ class MailShipping extends Mailable
     /**
      * build the message
      *
-     * @return MailShipping
+     * @return MailContact
      */
-    public function build(): MailShipping
+    public function build(): MailContact
     {
         return $this->from('contact@gmail.com', 'Contact Laravel')
                     ->subject('Demande de contact')
