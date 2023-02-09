@@ -27,6 +27,6 @@ Route::get('/', function () {
     return view('contact');
 });
 
-Route::get('/contact', [MailController::class, 'showForm'])->name("contact");
+Route::get('/contact', [MailController::class, 'showForm']);
 
-Route::post('/contact', [MailController::class, 'sendMail']);
+Route::post('/contact', [MailController::class, 'sendMail'])->name("contact");
